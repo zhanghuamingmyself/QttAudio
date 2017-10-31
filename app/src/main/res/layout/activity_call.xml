@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qttaudio.android.demo.CallActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/call_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+        <!--android:layout_below="@+id/call_toolbar"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/call_call_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="@color/comonColor" />
+
+                <TextView
+                    android:id="@+id/call_status_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"
+                    android:background="@color/comonColor"
+                    android:gravity="center_vertical"
+                    android:text="接通中…"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/down_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                        <ImageButton
+                            android:id="@+id/call_denoise_imagebutton"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:background="#00000000"
+                            app:srcCompat="@drawable/noise_2"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                        <ImageButton
+                            android:id="@+id/call_decho_imagebutton"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:background="#00000000"
+                            app:srcCompat="@drawable/squeak_2"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_vertical|right"-->
+                        <!--android:text="降噪" />-->
+
+                    <!--<Switch-->
+                        <!--android:id="@+id/call_noise_switch1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:checked="false"-->
+                        <!--android:layout_weight="0.3" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="0.7" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/call_temp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_vertical|right"-->
+                        <!--android:text="有回声啸叫" />-->
+
+                    <!--<Switch-->
+                        <!--android:id="@+id/call_noise_switch2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:checked="false"-->
+                        <!--android:layout_weight="0.3"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="0.7" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1.5">
+
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical|left"
+                        android:text="音频设备:"
+                        android:textSize="14dp"
+                        />
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/call_audio_spinner"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:checked="false"-->
+                        <!--android:layout_weight="0.5"></Spinner>-->
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent" />
+                    <com.qttaudio.android.demo.PullDownMenu
+                        android:id="@+id/call_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="扬声器"
+                        android:visibility="gone"
+                        />
+
+                    <Switch
+                        android:id="@+id/call_microphone_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:visibility="gone"
+                        android:layout_weight="0.3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7" />
+
+                    <TextView
+                        android:id="@+id/call_bluetooth_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="蓝牙"
+                        android:visibility="gone"/>
+
+                    <Switch
+                        android:id="@+id/bluetooth_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:layout_weight="0.3"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7" />
+
+                </LinearLayout>
+
+                <!--喇叭声音-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/output_imageview"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/outputvolume" />
+
+                    <SeekBar
+                        android:id="@+id/call_output_seekbar"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/output_imageview"
+                        android:gravity="center_vertical"
+                        android:max="100"
+                        android:progress="33"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/input_imageview"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/inputvolume"/>
+
+                    <SeekBar
+
+                        android:id="@+id/call_input_seekbar"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/input_imageview"
+                        android:gravity="center_vertical"
+                        android:max="100"
+                        android:progress="33"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/call_temp_noise"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="40dp"-->
+                        <!--android:src="@drawable/inputvolume"/>-->
+                    <TextView
+                        android:text="降噪"
+                        android:id="@+id/call_temp_noise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/inputvolume" />
+                    <SeekBar
+
+                        android:id="@+id/call_noise_seekbar"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/call_temp_noise"
+                        android:gravity="center_vertical"
+                        android:max="60"
+                        android:progress="5"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <ImageButton
+                        android:id="@+id/call_hungup_imagebutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        app:srcCompat="@drawable/hungupimage" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

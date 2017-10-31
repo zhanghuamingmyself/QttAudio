@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <ListView
+        android:id="@+id/addip_listview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/showtext"
+            android:background="@color/comonColor"
+            android:textColor="@color/whiteColor"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:text="123" />
+
+        <Button
+            android:id="@+id/button111111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/addip_call_imagebutton"
+            android:backgroundTint="@color/whiteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button111111111"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/call" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

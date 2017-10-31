@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="QttAudioJNI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/QttAudioJNI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

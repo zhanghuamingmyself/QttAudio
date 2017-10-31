@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_pop1"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/menulist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#696969"
+        android:dividerHeight="1.0dip"
+        android:padding="2dip"
+        android:scrollbars="none" >
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/comonColor">
+
+    <TextView
+        android:id="@+id/tvPullDown"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginRight="0.5dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="#ffffff"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:text="默认输出"
+        android:textColor="@color/comonColor"
+        android:textSize="14dp"
+        android:gravity="center|left"
+        android:drawableRight="@drawable/down"
+        android:drawablePadding="5dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

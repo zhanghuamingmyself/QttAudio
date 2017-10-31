@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/comonColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView android:id="@+id/textTile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:text="QttAudio体验版"
+            android:layout_weight="3"/>
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/comonColor"
+            android:text="退出"
+            android:textColor="@color/whiteColor"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="400dp"-->
+        <!--android:layout_marginTop="@and"-->
+        <!---->
+        <!---->
+        <!--/>-->
+        <!--android:layout_below="@+id/theme_ID"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/addip_showmessage"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="#3f51b5"
+                android:text="本机IP:192.168.234.234"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <ListView
+                android:id="@+id/addip_listview"
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+
+
+
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="\n注意:需通话相关方处于同一无线网络下\n"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/addip_call_imagebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:src="@drawable/call" />
+
+
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="回声处理"-->
+                    <!--android:id="@+id/addip_call_deletecho"-->
+                    <!--android:layout_alignBottom="@+id/addip_call_imagebutton"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/addip_call_deletecho"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:id="@+id/addip_call_delayTextView"-->
+                    <!--android:text="delay=?"-->
+                    <!--/>-->
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
